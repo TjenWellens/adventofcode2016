@@ -1,3 +1,5 @@
+package general;
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -8,14 +10,14 @@ import java.util.List;
 /**
  * Created by tjen on 05/12/16.
  */
-public abstract class BaseInput {
+public class BaseInput {
     protected final String filename;
 
     public BaseInput(String filename) {
         this.filename = "./resources/" + filename;
     }
 
-    private List<String> readLines() {
+    public List<String> readLines() {
         List<String> lines = new LinkedList<>();
 
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filename)))) {

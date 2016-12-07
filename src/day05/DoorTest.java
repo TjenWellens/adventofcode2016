@@ -146,7 +146,7 @@ wtnhxymk27712456=00000048d155e2c930602533209b0154
             "00000048d155e2c930602533209b0154"
     };
 
-    //    @Test
+        @Test
     public void md5() throws NoSuchAlgorithmException, CloneNotSupportedException {
         final String input = "abc3231929";
         assertEquals("00000155f8105dff7f56ee10fa9b9abd", MD5.hash(input));
@@ -162,13 +162,13 @@ wtnhxymk27712456=00000048d155e2c930602533209b0154
         }
     }
 
-    //    @Test
+        @Test
     public void example() {
         String password = new Door("abc").calc();
         assertEquals("18f", password.substring(0, 3));
     }
 
-    //        @Test
+            @Test
     public void input() {
         String password = new Door(Input.text).calc();
         assertEquals(8, password.length());
@@ -205,7 +205,7 @@ wtnhxymk27712456=00000048d155e2c930602533209b0154
         assertEquals("437e60fc", password.toString());
     }
 
-    //    @Test
+        @Test
     public void example2() {
         assertEquals("437e60fc", new Door(Input.text).calc2());
     }
